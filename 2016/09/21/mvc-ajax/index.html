@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="mvc,ajax," />
 
 
 
@@ -86,12 +86,19 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Ember">
-<meta property="og:url" content="/index.html">
+<meta name="description" content="MVC浅析MVC简介MVC全名是Model View Controller，是模型(model)－视图(view)－控制器(controller)的缩写。是一种用一种业务逻辑、数据、界面显示分离的方法组织代码，将业务逻辑聚集到一个部件里面，在改进和个性化定制界面及用户交互的同时，不需要重新编写业务逻辑。MVC被独特的发展起来用于映射传统的输入、处理和输出功能在一个逻辑的图形化用户界面的结构中。MV">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MVC and Ajax">
+<meta property="og:url" content="/2016/09/21/mvc-ajax/index.html">
 <meta property="og:site_name" content="Ember">
+<meta property="og:description" content="MVC浅析MVC简介MVC全名是Model View Controller，是模型(model)－视图(view)－控制器(controller)的缩写。是一种用一种业务逻辑、数据、界面显示分离的方法组织代码，将业务逻辑聚集到一个部件里面，在改进和个性化定制界面及用户交互的同时，不需要重新编写业务逻辑。MVC被独特的发展起来用于映射传统的输入、处理和输出功能在一个逻辑的图形化用户界面的结构中。MV">
+<meta property="og:image" content="/html/mvc.jpg">
+<meta property="og:image" content="/html/async.png">
+<meta property="og:updated_time" content="2016-09-21T06:05:08.481Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ember">
+<meta name="twitter:title" content="MVC and Ajax">
+<meta name="twitter:description" content="MVC浅析MVC简介MVC全名是Model View Controller，是模型(model)－视图(view)－控制器(controller)的缩写。是一种用一种业务逻辑、数据、界面显示分离的方法组织代码，将业务逻辑聚集到一个部件里面，在改进和个性化定制界面及用户交互的同时，不需要重新编写业务逻辑。MVC被独特的发展起来用于映射传统的输入、处理和输出功能在一个逻辑的图形化用户界面的结构中。MV">
+<meta name="twitter:image" content="/html/mvc.jpg">
 
 
 
@@ -112,9 +119,9 @@
 
 
 
-  <link rel="canonical" href="/"/>
+  <link rel="canonical" href="/2016/09/21/mvc-ajax/"/>
 
-  <title> Ember </title>
+  <title> MVC and Ajax | Ember </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -145,9 +152,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -247,9 +252,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -269,179 +274,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/09/21/node-mvc-demo/" itemprop="url">
-                  nodeJs结合Mysql数据库与前端Ajax登陆实例
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-09-21T14:06:02+08:00" content="2016-09-21">
-              2016-09-21
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/mysql/" itemprop="url" rel="index">
-                    <span itemprop="name">mysql</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/mysql/nodeJs/" itemprop="url" rel="index">
-                    <span itemprop="name">nodeJs</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/mysql/nodeJs/mvc/" itemprop="url" rel="index">
-                    <span itemprop="name">mvc</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/mysql/nodeJs/mvc/ajax/" itemprop="url" rel="index">
-                    <span itemprop="name">ajax</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/09/21/node-mvc-demo/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/21/node-mvc-demo/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/09/21/node-mvc-demo/" class="leancloud_visitors" data-flag-title="nodeJs结合Mysql数据库与前端Ajax登陆实例">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="NodeJs-express框架-MVC结合Mysql数据库与前端Ajax登陆实例"><a href="#NodeJs-express框架-MVC结合Mysql数据库与前端Ajax登陆实例" class="headerlink" title="NodeJs(express框架) MVC结合Mysql数据库与前端Ajax登陆实例"></a>NodeJs(express框架) MVC结合Mysql数据库与前端Ajax登陆实例</h2><p>本实例我们使用NodeJs作为服务端链接Mysql数据库，前端使用Ajax操作.获取的数据格式为Json形式.该用例下载地址github:<a href="https://github.com/linkeyd/nodeMysql">nodeMysql</a></p>
-<h3 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h3><p>创建一个Mysql <code>Test</code>数据库表<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="comment">-- ----------------------------</span></div><div class="line"><span class="comment">-- Table structure for `user`</span></div><div class="line"><span class="comment">-- ----------------------------</span></div><div class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> <span class="keyword">IF</span> <span class="keyword">EXISTS</span> <span class="string">`user`</span>;</div><div class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="string">`user`</span> (</div><div class="line">  <span class="string">`username`</span> <span class="built_in">varchar</span>(<span class="number">255</span>) <span class="keyword">DEFAULT</span> <span class="literal">NULL</span>,</div><div class="line">  <span class="string">`password`</span> <span class="built_in">varchar</span>(<span class="number">255</span>) <span class="keyword">DEFAULT</span> <span class="literal">NULL</span>,</div><div class="line">  <span class="string">`id`</span> <span class="built_in">int</span>(<span class="number">11</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> AUTO_INCREMENT,</div><div class="line">  PRIMARY <span class="keyword">KEY</span> (<span class="string">`id`</span>)</div><div class="line">) <span class="keyword">ENGINE</span>=<span class="keyword">InnoDB</span> AUTO_INCREMENT=<span class="number">2</span> <span class="keyword">DEFAULT</span> <span class="keyword">CHARSET</span>=utf8;</div><div class="line"></div><div class="line"><span class="comment">-- ----------------------------</span></div><div class="line"><span class="comment">-- Records of user</span></div><div class="line"><span class="comment">-- ----------------------------</span></div><div class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> <span class="string">`user`</span> <span class="keyword">VALUES</span> (<span class="string">'test'</span>, <span class="string">'lanling'</span>, <span class="string">'1'</span>);</div></pre></td></tr></table></figure></p>
-<h3 id="服务端"><a href="#服务端" class="headerlink" title="服务端"></a>服务端</h3><p>我们使用NodeJs带的NPM包安装相关库文件。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm install mysql --save</div><div class="line">npm install express --save</div></pre></td></tr></table></figure></p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/09/21/node-mvc-demo/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/09/21/mvc-ajax/" itemprop="url">
-                  MVC and Ajax
-                </a>
+                MVC and Ajax
               
             
           </h1>
@@ -528,246 +361,122 @@
       
 
       
-        
-          <h2 id="MVC浅析"><a href="#MVC浅析" class="headerlink" title="MVC浅析"></a>MVC浅析</h2><h3 id="MVC简介"><a href="#MVC简介" class="headerlink" title="MVC简介"></a>MVC简介</h3><p>MVC全名是Model View Controller，是模型(model)－视图(view)－控制器(controller)的缩写。是一种用一种业务逻辑、数据、界面显示分离的方法组织代码，将业务逻辑聚集到一个部件里面，在改进和个性化定制界面及用户交互的同时，不需要重新编写业务逻辑。MVC被独特的发展起来用于映射传统的输入、处理和输出功能在一个逻辑的图形化用户界面的结构中。MVC 分层有助于管理复杂的应用程序，可以结合AJAX前后端分离，让服务端成员在没有视图的基础上也可以进行用例测试。</p>
+        <h2 id="MVC浅析"><a href="#MVC浅析" class="headerlink" title="MVC浅析"></a>MVC浅析</h2><h3 id="MVC简介"><a href="#MVC简介" class="headerlink" title="MVC简介"></a>MVC简介</h3><p>MVC全名是Model View Controller，是模型(model)－视图(view)－控制器(controller)的缩写。是一种用一种业务逻辑、数据、界面显示分离的方法组织代码，将业务逻辑聚集到一个部件里面，在改进和个性化定制界面及用户交互的同时，不需要重新编写业务逻辑。MVC被独特的发展起来用于映射传统的输入、处理和输出功能在一个逻辑的图形化用户界面的结构中。MVC 分层有助于管理复杂的应用程序，可以结合AJAX前后端分离，让服务端成员在没有视图的基础上也可以进行用例测试。</p>
 <h3 id="MVC功能"><a href="#MVC功能" class="headerlink" title="MVC功能"></a>MVC功能</h3><ol>
 <li><strong>Model</strong>（模型）是应用程序中用于处理应用程序数据逻辑的部分。通常模型对象负责在数据库中存取数据,和创建数据库模型。</li>
 <li><strong>View</strong>（视图）是应用程序中处理数据显示的部分。通常视图是HTML等图形显示部分（前端部分）。</li>
-<li><strong>Controller</strong>（控制器）是应用程序中处理用户交互的部分。通常控制器负责从视图读取数据，控制用户输入，并向模型发送数据。而在现代模型中服务端工程师与前端工程师都要负责 <strong>Controller</strong>部分代码，服务端主要的表现形式为request获取前端用户数据和respond前端返回前端数据，前端主要表现为AJAX发送用户数据，Callback回调成功服务端数据通过数据修改视图显示状态。
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/09/21/mvc-ajax/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+<li><strong>Controller</strong>（控制器）是应用程序中处理用户交互的部分。通常控制器负责从视图读取数据，控制用户输入，并向模型发送数据。而在现代模型中服务端工程师与前端工程师都要负责 <strong>Controller</strong>部分代码，服务端主要的表现形式为request获取前端用户数据和respond前端返回前端数据，前端主要表现为AJAX发送用户数据，Callback回调成功服务端数据通过数据修改视图显示状态。<a id="more"></a>
+</li>
+</ol>
+<h3 id="MVC结构图"><a href="#MVC结构图" class="headerlink" title="MVC结构图"></a>MVC结构图</h3><p><img src="/html/mvc.jpg" alt="tool-editor"></p>
+<h2 id="Ajax浅析"><a href="#Ajax浅析" class="headerlink" title="Ajax浅析"></a>Ajax浅析</h2><h3 id="Ajax简介"><a href="#Ajax简介" class="headerlink" title="Ajax简介"></a>Ajax简介</h3><p>AJAX即“Asynchronous Javascript And XML”（异步JavaScript和XML），是一种前端技术，它可以实现在不刷新页面的情况下修改DOM即可观察到页面数据的变化，是一种动态网页技术，在目前MXL基本被JSON替代。在传统编程中我们大量接触的是同步编程，而Ajax是一种异步编程方式。所谓的同步和异步在很大的区别上是指执行顺序的不同。</p>
+<h3 id="Json"><a href="#Json" class="headerlink" title="Json"></a>Json</h3><p>json是一种数据格式，它的主要构成是一个<code>{key:value}</code>键值对形式，<code>value</code>可嵌套数组和继续嵌套键值对等，是一种易解析且易组成复杂数据的数据格式。<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">status: 200,</div><div class="line">message: [&#123;</div><div class="line">      username: "test", </div><div class="line">      password: "lanling", id: 1</div><div class="line">      &#125;]</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="同步与异步"><a href="#同步与异步" class="headerlink" title="同步与异步"></a>同步与异步</h3><p>假定A语句，B语句，C语句，D语句呈队列排序。每条语句的执行顺序为2S,1S,1.5S,0.5S.<br>同步编程执行顺序:A-&gt;B-&gt;C-&gt;D<br>异步执行顺序：A,B,C,D 同时进行，无先后执行顺序。</p>
+<h3 id="synchronous-同步-asynchronous（异步）执行顺序图"><a href="#synchronous-同步-asynchronous（异步）执行顺序图" class="headerlink" title="synchronous(同步)asynchronous（异步）执行顺序图"></a>synchronous(同步)asynchronous（异步）执行顺序图</h3><p><img src="/html/async.png" alt="tool-editor"></p>
+<h3 id="js-Ajax实现"><a href="#js-Ajax实现" class="headerlink" title="js Ajax实现"></a>js Ajax实现</h3><p>js ajax模块<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> ajax = <span class="function"><span class="keyword">function</span> (<span class="params">options</span>) </span>&#123;</div><div class="line">    options = options || &#123;&#125;;</div><div class="line"></div><div class="line">    options.type = (options.type || <span class="string">'GET'</span>).toUpperCase();<span class="comment">//toUpperCase 大小写转化,默认全部转化成大写</span></div><div class="line">    options.dataType = options.dataType || <span class="string">'json'</span>;</div><div class="line">    <span class="keyword">var</span> params = formatParams(options.data);</div><div class="line">    <span class="comment">//创建非IE6 AJAX请求</span></div><div class="line">    <span class="keyword">if</span> (<span class="built_in">window</span>.XMLHttpRequest) &#123;</div><div class="line">        <span class="keyword">var</span> xhr = <span class="keyword">new</span> XMLHttpRequest();</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        <span class="keyword">var</span> xhr = <span class="keyword">new</span> XMLHttpRequest();</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">//连接和发送</span></div><div class="line">    <span class="keyword">if</span> (options.type == <span class="string">'GET'</span>) &#123;</div><div class="line">        xhr.open(<span class="string">'GET'</span>, options.url + <span class="string">'?'</span> + params, <span class="literal">true</span>);</div><div class="line">        xhr.send(<span class="literal">null</span>);</div><div class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (options.type == <span class="string">'POST'</span>) &#123;</div><div class="line">        xhr.open(<span class="string">'POST'</span>, options.url, <span class="literal">true</span>);</div><div class="line">        <span class="comment">//提交表单设置的内容类型</span></div><div class="line">        xhr.setRequestHeader(<span class="string">'Content-Type'</span>, <span class="string">'application/x-www-form-urlencoded'</span>);</div><div class="line">        xhr.send(params);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">//接收请求</span></div><div class="line">    xhr.onreadystatechange = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="keyword">if</span> (xhr.readyState == <span class="number">4</span>) &#123;</div><div class="line">            <span class="keyword">var</span> status = xhr.status;</div><div class="line">            <span class="keyword">if</span> (status &gt;= <span class="number">200</span> &amp;&amp; status &lt; <span class="number">300</span>) &#123;</div><div class="line">                options.success &amp;&amp; options.success(<span class="built_in">eval</span>(<span class="string">'('</span> + xhr.responseText + <span class="string">')'</span>), xhr.responseXML);</div><div class="line">            &#125; <span class="keyword">else</span> &#123;</div><div class="line">                options.error &amp;&amp; options.error(status);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;;</div><div class="line"></div><div class="line">&#125;;</div><div class="line"><span class="comment">//将请求的对象转化成url</span></div><div class="line"><span class="keyword">var</span> formatParams = <span class="function"><span class="keyword">function</span> (<span class="params">data</span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> arr = [];</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> name <span class="keyword">in</span> data) &#123;</div><div class="line">        arr.push(<span class="built_in">encodeURIComponent</span>(name) + <span class="string">'='</span> + <span class="built_in">encodeURIComponent</span>(data[name]));</div><div class="line">    &#125;</div><div class="line">    arr.push((<span class="string">'v='</span> + <span class="built_in">Math</span>.random()).replace(<span class="string">'.'</span>, <span class="string">''</span>));</div><div class="line">    <span class="keyword">return</span> arr.join(<span class="string">'&amp;'</span>);</div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
+<p>使用方法<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">   ajax(&#123;</div><div class="line">      url : <span class="string">'/login'</span>,<span class="comment">//执行router url请求</span></div><div class="line">      type:<span class="string">'POST'</span>,<span class="comment">//请求类型</span></div><div class="line">      dataType:<span class="string">'json'</span>,</div><div class="line">      data:&#123;username:username,password:password&#125;,<span class="comment">//request提交给后台数据</span></div><div class="line">      success:<span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</div><div class="line">      &#125;,</div><div class="line">      error:<span class="function"><span class="keyword">function</span>(<span class="params">err</span>)</span>&#123;</div><div class="line">          <span class="built_in">console</span>.log(err);</div><div class="line">      &#125;</div><div class="line">    &#125;)</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+
+    <div>
+      
         
+<div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/img/weixin.jpg" alt="蘭凛 wechat" style="width: 200px; max-width: 100%;"/>
+    <div>扫一扫上面的微信公众号，订阅我的博客！</div>
+</div>
+
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/09/18/javascript-OOP/" itemprop="url">
-                  javascript面向对象
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-09-18T15:43:10+08:00" content="2016-09-18">
-              2016-09-18
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/javascript/" itemprop="url" rel="index">
-                    <span itemprop="name">javascript</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
+            <a href="/tags/mvc/" rel="tag">#mvc</a>
           
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/09/18/javascript-OOP/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/18/javascript-OOP/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/09/18/javascript-OOP/" class="leancloud_visitors" data-flag-title="javascript面向对象">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
+            <a href="/tags/ajax/" rel="tag">#ajax</a>
           
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <h2 id="OOP浅析"><a href="#OOP浅析" class="headerlink" title="OOP浅析"></a>OOP浅析</h2><h3 id="面向对象编程"><a href="#面向对象编程" class="headerlink" title="面向对象编程"></a>面向对象编程</h3><p>面向对象编程(Object Oriented Programming,OOP),我们一般在学习C++和JAVA C#等语言中会经常使用，它 达到了软件工程的三个主要目标：重用性、灵活性和扩展性。它们最大的特点就是：封装 - 继承 - 多态。它比传统的面向过程语言区别于抽象性、封装性、重用性以及便于使用等方面的原因，在复杂的大型系统中能够简化代码使的面向对象编程方式越来越流行。现在也有越来越多的脚本语言采用了面向对象的编程思想让程序由繁化简。</p>
-<h3 id="面向对象编程的原则"><a href="#面向对象编程的原则" class="headerlink" title="面向对象编程的原则"></a>面向对象编程的原则</h3><ol>
-<li>开放－封闭原则(Open-Closed Principle),接口开放，内容封闭。</li>
-<li>里氏代换原则(Liskov Substitution Principle),子类型必须能够替换它们的基类型。</li>
-<li>依赖倒置原则(Dependence Inversion Principle),要依赖于抽象，不要依赖于具体。客户端依赖于抽象耦合。</li>
-<li>接口隔离原则(Interface Segregation Principle),使用多个专一功能的接口比使用一个的总接口总要好。</li>
-<li>合成复用原则(Composite Reuse Principle),多聚合、少继承。</li>
-<li>迪米特原则(Law of Demeter),尽可能的减少代码之间的耦合。
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/09/18/javascript-OOP/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/09/18/javascript-OOP/" rel="next" title="javascript面向对象">
+                <i class="fa fa-chevron-left"></i> javascript面向对象
+              </a>
+            
           </div>
-        
-      
-    </div>
 
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/09/21/node-mvc-demo/" rel="prev" title="nodeJs结合Mysql数据库与前端Ajax登陆实例">
+                nodeJs结合Mysql数据库与前端Ajax登陆实例 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
+
+    <div class="post-spread">
       
+        <div class="ds-share flat" data-thread-key="2016/09/21/mvc-ajax/"
+     data-title="MVC and Ajax"
+     data-content=""
+     data-url="/2016/09/21/mvc-ajax/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
 
-  
-  
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
 
-  
-  
-  
-
-  <article class="post post-type-picture " itemscope itemtype="http://schema.org/Article">
-
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <a href="/2016/09/18/group-test/"><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 100%;"><img src="/html/group1.jpg" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/html/group2.jpg" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/html/group3.png" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/html/group4.jpg" alt=""></div></div></div></div>
-</a>
-          
-        
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
       
     </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
+  </div>
 
 
           </div>
           
 
+  <p>热评文章</p>
+  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/09/21/mvc-ajax/"
+           data-title="MVC and Ajax" data-url="/2016/09/21/mvc-ajax/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -787,8 +496,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/img/avatar.jpg"
@@ -883,6 +601,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#MVC浅析"><span class="nav-number">1.</span> <span class="nav-text">MVC浅析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#MVC简介"><span class="nav-number">1.1.</span> <span class="nav-text">MVC简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MVC功能"><span class="nav-number">1.2.</span> <span class="nav-text">MVC功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MVC结构图"><span class="nav-number">1.3.</span> <span class="nav-text">MVC结构图</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Ajax浅析"><span class="nav-number">2.</span> <span class="nav-text">Ajax浅析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Ajax简介"><span class="nav-number">2.1.</span> <span class="nav-text">Ajax简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Json"><span class="nav-number">2.2.</span> <span class="nav-text">Json</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#同步与异步"><span class="nav-number">2.3.</span> <span class="nav-text">同步与异步</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#synchronous-同步-asynchronous（异步）执行顺序图"><span class="nav-number">2.4.</span> <span class="nav-text">synchronous(同步)asynchronous（异步）执行顺序图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#js-Ajax实现"><span class="nav-number">2.5.</span> <span class="nav-text">js Ajax实现</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -986,6 +715,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
