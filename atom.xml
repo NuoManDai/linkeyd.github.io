@@ -155,9 +155,9 @@
       <category term="javascript" scheme="/categories/javascript/"/>
     
     
-      <category term="nodeJs" scheme="/tags/nodeJs/"/>
-    
       <category term="javascript" scheme="/tags/javascript/"/>
+    
+      <category term="nodeJs" scheme="/tags/nodeJs/"/>
     
   </entry>
   
@@ -212,9 +212,9 @@
       <category term="nodeJs" scheme="/categories/nodeJs/"/>
     
     
-      <category term="hexo" scheme="/tags/hexo/"/>
-    
       <category term="nodeJs" scheme="/tags/nodeJs/"/>
+    
+      <category term="hexo" scheme="/tags/hexo/"/>
     
   </entry>
   
