@@ -270,6 +270,157 @@
             
               
                 
+                <a class="post-title-link" href="/2016/12/19/node-http/" itemprop="url">
+                  HTTP简介
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-12-19T17:18:09+08:00" content="2016-12-19">
+              2016-12-19
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/HTTP/" itemprop="url" rel="index">
+                    <span itemprop="name">HTTP</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/12/19/node-http/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/19/node-http/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/12/19/node-http/" class="leancloud_visitors" data-flag-title="HTTP简介">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="HTTP-协议"><a href="#HTTP-协议" class="headerlink" title="HTTP 协议"></a>HTTP 协议</h2><h3 id="HTTP简介"><a href="#HTTP简介" class="headerlink" title="HTTP简介"></a>HTTP简介</h3><p>超文本传输协议（HTTP，HyperText Transfer Protocol)是互联网上应用最为广泛的一种网络协议。所有的WWW文件都必须遵守这个标准。目前大部分应用开发都使用HTTP协议，如今无论是前端工程师，服务端工程师都要熟知HTTP协议。今天普遍使用的一个版本——HTTP 1.1。电商等大型科技公司使用的是——HTTPS。最新的HTTP版本于2015年发布为——HTTP2.0。</p>
+<h3 id="HTTP浅析"><a href="#HTTP浅析" class="headerlink" title="HTTP浅析"></a>HTTP浅析</h3><p>HTTP是一个客户端和服务器端请求和应答的标准。是客户端，服务器端应答机制。HTTP是客户端发起一个到服务器上指定端口（默认端口为80）的HTTP请求。服务端获得请求进行相关处理最后在返回给客户端。例如：我们在浏览器的地址栏里输入的网站地址叫做URL (Uniform Resource Locator，统一资源定位符)。就像每家每户都有一个门牌地址一样，每个网页也都有一个Internet地址。而每个网页中每个资源都有一个HTTP请求来动态展示HTML。</p>
+<h3 id="HTTP请求分析"><a href="#HTTP请求分析" class="headerlink" title="HTTP请求分析"></a>HTTP请求分析</h3><p><img src="/html/http.png" alt="tool-editor"></p>
+<p>这是一段关于获取用户数据的请求。</p>
+<h4 id="General"><a href="#General" class="headerlink" title="General"></a>General</h4><ol>
+<li><code>Request URL</code>这个是关于HTTP请求的一个URL，定位到的是一个请求的链接地址。指向后台发出某种动作，这种动作是服务端已经编写完成的。例如此URL获取用户数据。</li>
+<li><code>Request Method</code>HTTP的请求方法，在传统的HTTP请求中常用的方法有<code>post</code> <code>get</code><br>具体的请参考<a href="http://www.w3school.com.cn/tags/html_ref_httpmethods.asp" target="_blank" rel="external">HTTP 方法：GET 对比 POST</a><br>在HTTP 1.1之后Rest规范化之后又出现了 <code>put</code> <code>delete</code>等方法。具体参考<code>Rest模式开发</code>.</li>
+<li><p><code>Status Code</code>是一个三个数字的结果代码。Reason-Phrase给Status-Code提供一个简单的文本描述。Status-Code主要用于机器自动识别，Reason-Phrase主要用于帮助用户理解。Status-Code的第一个数字定义响应的类别，后两个数字没有分类的作用。第一个数字可能取5个不同的值：</p>
+<blockquote>
+<ul>
+<li>1xx:信息响应类，表示接收到请求并且继续处理</li>
+<li>2xx:处理成功响应类，表示动作被成功接收、理解和接受（200）</li>
+<li>3xx:重定向响应类，为了完成指定的动作，必须接受进一步处理（304）</li>
+<li>4xx:客户端错误，客户请求包含语法错误或者是不能正确执行(404)</li>
+<li>5xx:服务端错误，服务器不能正确执行一个正确的请求（500，502）</li>
+</ul>
+</blockquote>
+</li>
+<li><p><code>Remote Address</code> 当前客户机的地址，该地址由主机IP地址：端口号  组成。</p>
+</li>
+</ol>
+<h4 id="Request-Headers"><a href="#Request-Headers" class="headerlink" title="Request Headers"></a>Request Headers</h4><p>代表用户提交的参数请求，POST提交的时候我们一般是用键值对的形式提交一组参数<code>{key:value}</code>在GET方法的时候我们有时候会采用 <code>http://url?key=value</code> 的形式将一个链接带参数提交。</p>
+<h4 id="Query-String-Parameters"><a href="#Query-String-Parameters" class="headerlink" title="Query String Parameters"></a>Query String Parameters</h4><p>代表的是返回的参数值，<code>respone</code>我们在提交一段URL请求给后台的时候，后台服务器端将通过路由去匹配URL所负责的代码方法，当代码处理完成的时候后台服务端将会将值通过<code>res</code>的形式进行返回常见的方案有通过 <code>String</code>和<code>json</code>还有<code>XML</code>格式，而目前普遍最通用的无疑是<code>JSON</code>格式的数据，它是一段<code>key:value</code>的形式<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">status: 200,</div><div class="line">message: [&#123;</div><div class="line">      username: "test", </div><div class="line">      password: "lanling", id: 1</div><div class="line">      &#125;]</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/09/21/node-mvc-demo/" itemprop="url">
                   nodeJs结合Mysql数据库与前端Ajax登陆实例
                 </a>
@@ -703,57 +854,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-picture " itemscope itemtype="http://schema.org/Article">
-
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <a href="/2016/09/18/group-test/"><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 100%;"><img src="/html/group1.jpg" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/html/group2.jpg" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/html/group3.png" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/html/group4.jpg" alt=""></div></div></div></div>
-</a>
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -799,7 +899,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-count">6</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -807,7 +907,7 @@
           
             <div class="site-state-item site-state-categories">
               
-                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-count">9</span>
                 <span class="site-state-item-name">分类</span>
               
             </div>
@@ -816,7 +916,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
