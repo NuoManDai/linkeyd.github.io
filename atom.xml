@@ -255,11 +255,11 @@
     
       <category term="nodeJs" scheme="/tags/nodeJs/"/>
     
+      <category term="mysql" scheme="/tags/mysql/"/>
+    
       <category term="mvc" scheme="/tags/mvc/"/>
     
       <category term="ajax" scheme="/tags/ajax/"/>
-    
-      <category term="mysql" scheme="/tags/mysql/"/>
     
   </entry>
   
