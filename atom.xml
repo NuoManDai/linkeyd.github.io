@@ -162,9 +162,9 @@
       <category term="nodeJs" scheme="/categories/nodeJs/"/>
     
     
-      <category term="nodeJs" scheme="/tags/nodeJs/"/>
-    
       <category term="hexo" scheme="/tags/hexo/"/>
+    
+      <category term="nodeJs" scheme="/tags/nodeJs/"/>
     
   </entry>
   
@@ -255,11 +255,11 @@
     
       <category term="nodeJs" scheme="/tags/nodeJs/"/>
     
-      <category term="mysql" scheme="/tags/mysql/"/>
-    
       <category term="mvc" scheme="/tags/mvc/"/>
     
       <category term="ajax" scheme="/tags/ajax/"/>
+    
+      <category term="mysql" scheme="/tags/mysql/"/>
     
   </entry>
   
@@ -354,9 +354,9 @@
       <category term="javascript" scheme="/categories/javascript/"/>
     
     
-      <category term="javascript" scheme="/tags/javascript/"/>
-    
       <category term="nodeJs" scheme="/tags/nodeJs/"/>
+    
+      <category term="javascript" scheme="/tags/javascript/"/>
     
   </entry>
   
