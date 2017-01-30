@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2017-01-26T05:38:49.314Z</updated>
+  <updated>2017-01-30T09:30:26.644Z</updated>
   <id>/</id>
   
   <author>
@@ -14,6 +14,44 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>React antd-moblie for Webpack2.x 安装配置</title>
+    <link href="/2017/01/30/antd-moblie-setting/"/>
+    <id>/2017/01/30/antd-moblie-setting/</id>
+    <published>2017-01-30T09:27:53.000Z</published>
+    <updated>2017-01-30T09:30:26.644Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><blockquote>
+<p>npm install antd-mobile –save<br>npm install webpack –save<br>npm install babel-plugin-import –save<br>npm install postcss-pxtorem –save</p>
+</blockquote>
+<p>##使用<br>使用webpack设置中 resolve键设置：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">resolve: &#123;</div><div class="line">               alias: &#123;</div><div class="line">                   actions: `$&#123;this.srcPathAbsolute&#125;/actions/`</div><div class="line">               &#125;,</div><div class="line">               extensions: [&apos;.web.js&apos;,&apos;jsx&apos;,&apos;.js&apos;,&apos;json&apos;],</div><div class="line">               modules: [</div><div class="line">                   path.join(__dirname, &apos;../node_modules&apos;),</div><div class="line">                   &apos;node_modules&apos;</div><div class="line">               ]</div><div class="line">           &#125;</div></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<p>更改 .babelrc文件配置信息，添加插件信息：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;&quot;plugins&quot;: [[&quot;import&quot;, &#123; &quot;style&quot;: &quot;css&quot;, &quot;libraryName&quot;: &quot;antd-mobile&quot; &#125;]]&#125;</div></pre></td></tr></table></figure></p>
+<p>引入高清方案不让图像因为像素比例变得过大或者过小：<br>用脚本设置 html 的 viewport （不要再写 html meta 标签去设置 viewport）：在 html &gt; head 里<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;head&gt;</div><div class="line">  &lt;meta charset=&quot;utf-8&quot; /&gt;</div><div class="line">  &lt;title&gt;title&lt;/title&gt;</div><div class="line">  &lt;script&gt;</div><div class="line">  !function(e)&#123;function t(a)&#123;if(i[a])return i[a].exports;var n=i[a]=&#123;exports:&#123;&#125;,id:a,loaded:!1&#125;;return e[a].call(n.exports,n,n.exports,t),n.loaded=!0,n.exports&#125;var i=&#123;&#125;;return t.m=e,t.c=i,t.p=&quot;&quot;,t(0)&#125;([function(e,t)&#123;&quot;use strict&quot;;Object.defineProperty(t,&quot;__esModule&quot;,&#123;value:!0&#125;);var i=window;t[&quot;default&quot;]=i.flex=function(e,t)&#123;var a=e||100,n=t||1,r=i.document,o=navigator.userAgent,d=o.match(/Android[\S\s]+AppleWebkit\/(\d&#123;3&#125;)/i),l=o.match(/U3\/((\d+|\.)&#123;5,&#125;)/i),c=l&amp;&amp;parseInt(l[1].split(&quot;.&quot;).join(&quot;&quot;),10)&gt;=80,p=navigator.appVersion.match(/(iphone|ipad|ipod)/gi),s=i.devicePixelRatio||1;p||d&amp;&amp;d[1]&gt;534||c||(s=1);var u=1/s,m=r.querySelector(&apos;meta[name=&quot;viewport&quot;]&apos;);m||(m=r.createElement(&quot;meta&quot;),m.setAttribute(&quot;name&quot;,&quot;viewport&quot;),r.head.appendChild(m)),m.setAttribute(&quot;content&quot;,&quot;width=device-width,user-scalable=no,initial-scale=&quot;+u+&quot;,maximum-scale=&quot;+u+&quot;,minimum-scale=&quot;+u),r.documentElement.style.fontSize=a/2*s*n+&quot;px&quot;&#125;,e.exports=t[&quot;default&quot;]&#125;]);</div><div class="line">flex(100, 1);</div><div class="line">&lt;/script&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
+<p>对于使用 webpack 的项目，在webpack.config.js里新增pxtorem配置、代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">plugins: [</div><div class="line">           new webpack.LoaderOptionsPlugin(&#123;</div><div class="line">               test: /\.css$/,</div><div class="line">               postcss: [</div><div class="line">                   pxtorem(&#123;</div><div class="line">                       rootValue: 100,</div><div class="line">                       propWhiteList: [],</div><div class="line">                   &#125;)</div><div class="line">               ],</div><div class="line">           &#125;)</div><div class="line">       ]</div></pre></td></tr></table></figure></p>
+<p>到此antd-moblie webpack2.x设置完成<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">import &#123; Button &#125; from &apos;antd-mobile&apos;;</div><div class="line">ReactDOM.render(&lt;Button&gt;Start&lt;/Button&gt;, mountNode);</div></pre></td></tr></table></figure></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;npm install antd-mobile –save&lt;br&gt;npm install webpack –save&lt;br&gt;npm install babel-plugin-import –save&lt;br&gt;npm install postcss-pxtorem –save&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;##使用&lt;br&gt;使用webpack设置中 resolve键设置：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;resolve: &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;               alias: &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;                   actions: `$&amp;#123;this.srcPathAbsolute&amp;#125;/actions/`&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;               &amp;#125;,&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;               extensions: [&amp;apos;.web.js&amp;apos;,&amp;apos;jsx&amp;apos;,&amp;apos;.js&amp;apos;,&amp;apos;json&amp;apos;],&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;               modules: [&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;                   path.join(__dirname, &amp;apos;../node_modules&amp;apos;),&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;                   &amp;apos;node_modules&amp;apos;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;               ]&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;           &amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="react" scheme="/categories/react/"/>
+    
+      <category term="webpack" scheme="/categories/react/webpack/"/>
+    
+    
+      <category term="react" scheme="/tags/react/"/>
+    
+      <category term="webpack" scheme="/tags/webpack/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux Ubuntu NodeJs项目部署（2）</title>
