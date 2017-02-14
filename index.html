@@ -497,7 +497,7 @@
           <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><blockquote>
 <p>npm install antd-mobile –save<br>npm install webpack –save<br>npm install babel-plugin-import –save<br>npm install postcss-pxtorem –save</p>
 </blockquote>
-<p>##使用<br>使用webpack设置中 resolve键设置：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">resolve: &#123;</div><div class="line">               alias: &#123;</div><div class="line">                   actions: `$&#123;this.srcPathAbsolute&#125;/actions/`</div><div class="line">               &#125;,</div><div class="line">               extensions: [&apos;.web.js&apos;,&apos;jsx&apos;,&apos;.js&apos;,&apos;json&apos;],</div><div class="line">               modules: [</div><div class="line">                   path.join(__dirname, &apos;../node_modules&apos;),</div><div class="line">                   &apos;node_modules&apos;</div><div class="line">               ]</div><div class="line">           &#125;</div></pre></td></tr></table></figure></p>
+<p>##使用<br>使用webpack设置中 resolve键设置：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">resolve: &#123;</div><div class="line">               alias: &#123;</div><div class="line">                   actions: <span class="string">`<span class="subst">$&#123;this.srcPathAbsolute&#125;</span>/actions/`</span></div><div class="line">               &#125;,</div><div class="line">               extensions: [<span class="string">'.web.js'</span>,<span class="string">'jsx'</span>,<span class="string">'.js'</span>,<span class="string">'json'</span>],</div><div class="line">               modules: [</div><div class="line">                   path.join(__dirname, <span class="string">'../node_modules'</span>),</div><div class="line">                   <span class="string">'node_modules'</span></div><div class="line">               ]</div><div class="line">           &#125;</div></pre></td></tr></table></figure></p>
           <div class="post-more-link text-center">
             <a class="btn" href="/2017/01/30/antd-moblie-setting/#more" rel="contents">
               阅读全文 &raquo;
@@ -998,16 +998,6 @@
   <span class="author" itemprop="copyrightHolder">蘭凛</span>
 </div>
 
-<div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
-</div>
-
-<div class="theme-info">
-  主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Pisces
-  </a>
-</div>
 
         
 
