@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2017-02-14T06:31:02.229Z</updated>
+  <updated>2017-02-14T07:32:56.136Z</updated>
   <id>/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="/2017/02/14/react-router/"/>
     <id>/2017/02/14/react-router/</id>
     <published>2017-02-14T05:31:34.000Z</published>
-    <updated>2017-02-14T06:31:02.229Z</updated>
+    <updated>2017-02-14T07:32:56.136Z</updated>
     
     <content type="html"><![CDATA[<p>1.安装react-router:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install react-router --save</div></pre></td></tr></table></figure></p>
 <p>2.在渲染输出的时候导入申明<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">import &#123;Router, Route, IndexRoute, hashHistory&#125; from &apos;react-router&apos;;</div></pre></td></tr></table></figure></p>
@@ -39,6 +39,8 @@
 <p>中间的<code>:id</code>匹配用户传入的任意参数我们可以通过子组件的<code>props</code>来获取参数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">this.props.params</div></pre></td></tr></table></figure></p>
 <p>路由Location属性<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">type Location = &#123;</div><div class="line">  pathname: Pathname;</div><div class="line">  search: QueryString;</div><div class="line">  query: Query;</div><div class="line">  state: LocationState;</div><div class="line">  action: Action;</div><div class="line">  key: LocationKey;</div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
 <p>6.当路由转跳的时候进入当前页面需要刷新页面，应当在子组件中触发<code>React componentDidUpdate</code>生命周期<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">componentDidUpdate(prevProps, prevState)&#123;</div><div class="line"></div><div class="line">        if(prevProps)&#123;</div><div class="line">            stepsController.stepRadicalController(this);</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        // Arrange Card Use Tip Formation</div><div class="line"></div><div class="line">        window.arrangeCardUseTips();</div><div class="line"></div><div class="line">    &#125;</div></pre></td></tr></table></figure></p>
+<p>7.当我们需要在路由切换时带有一定的动画效果时，我们便需要 <code>react-addons-css-transition-group</code> 这个插件了。使用ReactCSSTransitionGroup组件来包含我们需要呈现动画效果的Component<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install react-addons-css-transition-group --save</div></pre></td></tr></table></figure></p>
+<p>在路由最外层使用 React component:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">class App extends Component &#123;</div><div class="line">  render() &#123;</div><div class="line">    return (</div><div class="line">      &lt;div&gt;</div><div class="line">        &lt;ReactCSSTransitionGroup</div><div class="line">        component=&quot;div&quot;</div><div class="line">        transitionName=&quot;example&quot;</div><div class="line">        transitionEnter= &#123;true&#125;</div><div class="line">        transitionEnterTimeout=&#123;500&#125;</div><div class="line">        transitionLeaveTimeout=&#123;500&#125;</div><div class="line">        &gt;</div><div class="line">          &#123;React.cloneElement(this.props.children, &#123;</div><div class="line">            key: this.props.location.pathname</div><div class="line">          &#125;)&#125;</div><div class="line">          //克隆所有子节点，单独的&#123;this.props.children&#125;没有动画效果</div><div class="line">        &lt;/ReactCSSTransitionGroup&gt;</div><div class="line">      &lt;/div&gt;</div><div class="line">    )</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 ]]></content>
     
     <summary type="html">
