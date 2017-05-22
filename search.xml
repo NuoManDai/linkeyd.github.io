@@ -4,6 +4,24 @@
   
     
     <entry>
+      <title><![CDATA[个人项目介绍]]></title>
+      <url>/2017/05/21/Projects/</url>
+      <content type="html"><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>个人项目介绍，还有一些私人外包就不再介绍，如有问题请留言评论欢迎探讨，或者直接扫描二维码添加微信。</p>
+<h3 id="1-律动论坛"><a href="#1-律动论坛" class="headerlink" title="1.律动论坛"></a>1.律动论坛</h3><p><img src="/html/bbs.png" alt="bbs1"><br><img src="/html/bbs2.png" alt="bbs2"></p>
+<p>GitHub 服务端代码库 : <a href="https://github.com/linkeyd/rhythm_server" target="_blank" rel="external">https://github.com/linkeyd/rhythm_server</a><br>GitHub 前端代码库 : <a href="https://github.com/linkeyd/bbs_client" target="_blank" rel="external">https://github.com/linkeyd/bbs_client</a></p>
+<a id="more"></a>
+<h3 id="2-律动用户中心"><a href="#2-律动用户中心" class="headerlink" title="2.律动用户中心"></a>2.律动用户中心</h3><p><img src="/html/usercenter.png" alt="usercenter"></p>
+<p>律动用户中心 : <a href="http://usercenter.exdstudio.net/login.html" target="_blank" rel="external">http://usercenter.exdstudio.net/login.html</a></p>
+<h3 id="3-律动魔方"><a href="#3-律动魔方" class="headerlink" title="3.律动魔方"></a>3.律动魔方</h3><p><img src="/html/rhythmCube.png" alt="rhythmCube"></p>
+<p>律动魔方 : <a href="http://cube.exdstudio.net/show/index.html" target="_blank" rel="external">http://cube.exdstudio.net/show/index.html</a></p>
+<h3 id="4-3arc中文教育应用"><a href="#4-3arc中文教育应用" class="headerlink" title="4.3arc中文教育应用"></a>4.3arc中文教育应用</h3><p><img src="/html/chGame.png" alt="3arc"><br><img src="/html/chGame2.png" alt="3arc2"><br>3arc中文学习软件 ：<a href="http://arc.3elogic.com.sg/#/auth" target="_blank" rel="external">http://arc.3elogic.com.sg/#/auth</a></p>
+<h3 id="5-EZ-smart"><a href="#5-EZ-smart" class="headerlink" title="5.EZ-smart"></a>5.EZ-smart</h3><p><img src="/html/ezsmart.png" alt="EZ-smart"><br>EZ-smart网站 ：<a href="http://ezsmart.cn/" target="_blank" rel="external">http://ezsmart.cn/</a></p>
+<h3 id="6-福州大学至诚学院实验室官网"><a href="#6-福州大学至诚学院实验室官网" class="headerlink" title="6.福州大学至诚学院实验室官网"></a>6.福州大学至诚学院实验室官网</h3><p><img src="/html/joinus.png" alt="lib"><br>福州大学至诚学院实验室官网 ：<a href="http://www.lember.cn/" target="_blank" rel="external">http://www.lember.cn/</a></p>
+<h3 id="7-福州大学至诚学院CSS学习项目Dinner"><a href="#7-福州大学至诚学院CSS学习项目Dinner" class="headerlink" title="7.福州大学至诚学院CSS学习项目Dinner"></a>7.福州大学至诚学院CSS学习项目Dinner</h3><p><img src="/html/dinner.png" alt="lib"><br>福州大学至诚学院CSS学习项目Dinner ：<a href="http://diner.lember.cn/" target="_blank" rel="external">http://diner.lember.cn/</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[react-router 摘要]]></title>
       <url>/2017/02/14/react-router/</url>
       <content type="html"><![CDATA[<p>1.安装react-router:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install react-router --save</div></pre></td></tr></table></figure></p>

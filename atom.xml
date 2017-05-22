@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2017-02-14T07:49:16.171Z</updated>
+  <updated>2017-05-22T02:41:09.671Z</updated>
   <id>/</id>
   
   <author>
@@ -16,11 +16,47 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>个人项目介绍</title>
+    <link href="/2017/05/21/Projects/"/>
+    <id>/2017/05/21/Projects/</id>
+    <published>2017-05-21T02:03:50.000Z</published>
+    <updated>2017-05-22T02:41:09.671Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>个人项目介绍，还有一些私人外包就不再介绍，如有问题请留言评论欢迎探讨，或者直接扫描二维码添加微信。</p>
+<h3 id="1-律动论坛"><a href="#1-律动论坛" class="headerlink" title="1.律动论坛"></a>1.律动论坛</h3><p><img src="/html/bbs.png" alt="bbs1"><br><img src="/html/bbs2.png" alt="bbs2"></p>
+<p>GitHub 服务端代码库 : <a href="https://github.com/linkeyd/rhythm_server" target="_blank" rel="external">https://github.com/linkeyd/rhythm_server</a><br>GitHub 前端代码库 : <a href="https://github.com/linkeyd/bbs_client" target="_blank" rel="external">https://github.com/linkeyd/bbs_client</a></p>
+<a id="more"></a>
+<h3 id="2-律动用户中心"><a href="#2-律动用户中心" class="headerlink" title="2.律动用户中心"></a>2.律动用户中心</h3><p><img src="/html/usercenter.png" alt="usercenter"></p>
+<p>律动用户中心 : <a href="http://usercenter.exdstudio.net/login.html" target="_blank" rel="external">http://usercenter.exdstudio.net/login.html</a></p>
+<h3 id="3-律动魔方"><a href="#3-律动魔方" class="headerlink" title="3.律动魔方"></a>3.律动魔方</h3><p><img src="/html/rhythmCube.png" alt="rhythmCube"></p>
+<p>律动魔方 : <a href="http://cube.exdstudio.net/show/index.html" target="_blank" rel="external">http://cube.exdstudio.net/show/index.html</a></p>
+<h3 id="4-3arc中文教育应用"><a href="#4-3arc中文教育应用" class="headerlink" title="4.3arc中文教育应用"></a>4.3arc中文教育应用</h3><p><img src="/html/chGame.png" alt="3arc"><br><img src="/html/chGame2.png" alt="3arc2"><br>3arc中文学习软件 ：<a href="http://arc.3elogic.com.sg/#/auth" target="_blank" rel="external">http://arc.3elogic.com.sg/#/auth</a></p>
+<h3 id="5-EZ-smart"><a href="#5-EZ-smart" class="headerlink" title="5.EZ-smart"></a>5.EZ-smart</h3><p><img src="/html/ezsmart.png" alt="EZ-smart"><br>EZ-smart网站 ：<a href="http://ezsmart.cn/" target="_blank" rel="external">http://ezsmart.cn/</a></p>
+<h3 id="6-福州大学至诚学院实验室官网"><a href="#6-福州大学至诚学院实验室官网" class="headerlink" title="6.福州大学至诚学院实验室官网"></a>6.福州大学至诚学院实验室官网</h3><p><img src="/html/joinus.png" alt="lib"><br>福州大学至诚学院实验室官网 ：<a href="http://www.lember.cn/" target="_blank" rel="external">http://www.lember.cn/</a></p>
+<h3 id="7-福州大学至诚学院CSS学习项目Dinner"><a href="#7-福州大学至诚学院CSS学习项目Dinner" class="headerlink" title="7.福州大学至诚学院CSS学习项目Dinner"></a>7.福州大学至诚学院CSS学习项目Dinner</h3><p><img src="/html/dinner.png" alt="lib"><br>福州大学至诚学院CSS学习项目Dinner ：<a href="http://diner.lember.cn/" target="_blank" rel="external">http://diner.lember.cn/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;简述&quot;&gt;&lt;a href=&quot;#简述&quot; class=&quot;headerlink&quot; title=&quot;简述&quot;&gt;&lt;/a&gt;简述&lt;/h2&gt;&lt;p&gt;个人项目介绍，还有一些私人外包就不再介绍，如有问题请留言评论欢迎探讨，或者直接扫描二维码添加微信。&lt;/p&gt;
+&lt;h3 id=&quot;1-律动论坛&quot;&gt;&lt;a href=&quot;#1-律动论坛&quot; class=&quot;headerlink&quot; title=&quot;1.律动论坛&quot;&gt;&lt;/a&gt;1.律动论坛&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;/html/bbs.png&quot; alt=&quot;bbs1&quot;&gt;&lt;br&gt;&lt;img src=&quot;/html/bbs2.png&quot; alt=&quot;bbs2&quot;&gt;&lt;/p&gt;
+&lt;p&gt;GitHub 服务端代码库 : &lt;a href=&quot;https://github.com/linkeyd/rhythm_server&quot;&gt;https://github.com/linkeyd/rhythm_server&lt;/a&gt;&lt;br&gt;GitHub 前端代码库 : &lt;a href=&quot;https://github.com/linkeyd/bbs_client&quot;&gt;https://github.com/linkeyd/bbs_client&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Projects" scheme="/categories/Projects/"/>
+    
+    
+      <category term="Projects" scheme="/tags/Projects/"/>
+    
+  </entry>
+  
+  <entry>
     <title>react-router 摘要</title>
     <link href="/2017/02/14/react-router/"/>
     <id>/2017/02/14/react-router/</id>
     <published>2017-02-14T05:31:34.000Z</published>
-    <updated>2017-02-14T07:49:16.171Z</updated>
+    <updated>2017-02-14T07:49:18.000Z</updated>
     
     <content type="html"><![CDATA[<p>1.安装react-router:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install react-router --save</div></pre></td></tr></table></figure></p>
 <p>2.在渲染输出的时候导入申明<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> &#123;Router, Route, IndexRoute, hashHistory&#125; <span class="keyword">from</span> <span class="string">'react-router'</span>;</div></pre></td></tr></table></figure></p>
@@ -64,7 +100,7 @@
     <link href="/2017/01/30/antd-moblie-setting/"/>
     <id>/2017/01/30/antd-moblie-setting/</id>
     <published>2017-01-30T09:27:53.000Z</published>
-    <updated>2017-02-14T07:51:59.740Z</updated>
+    <updated>2017-02-14T07:52:00.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><blockquote>
 <p>npm install antd-mobile –save<br>npm install webpack –save<br>npm install babel-plugin-import –save<br>npm install postcss-pxtorem –save</p>
@@ -102,7 +138,7 @@
     <link href="/2017/01/26/linux-ubuntu-node-2/"/>
     <id>/2017/01/26/linux-ubuntu-node-2/</id>
     <published>2017-01-26T05:36:32.000Z</published>
-    <updated>2017-01-26T05:38:49.314Z</updated>
+    <updated>2017-01-26T05:38:50.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Linux-session管理工具screen安装使用"><a href="#Linux-session管理工具screen安装使用" class="headerlink" title="Linux session管理工具screen安装使用"></a>Linux session管理工具screen安装使用</h2><p><code>apt-get install build-essential</code> 安装基础编译环境<br><code>apt-get install screen</code> 管理程序运行</p>
 <blockquote>
@@ -167,7 +203,7 @@
     <link href="/2017/01/20/linux-unbuntu-node-1/"/>
     <id>/2017/01/20/linux-unbuntu-node-1/</id>
     <published>2017-01-20T05:33:29.000Z</published>
-    <updated>2017-01-26T05:37:53.088Z</updated>
+    <updated>2017-01-26T05:37:54.000Z</updated>
     
     <content type="html"><![CDATA[<p>##Linux Ubuntu 基本操作说明<br>首先使用基础命令:<br><code>tab</code> 按键可以快速补全你的单词和查找目标<br><code>ls</code> 查看当前目录下的文件<br><code>ps -ef | grep xxx</code> 查看当前进程<br><code>kill [PID]</code> 杀死PID的进程<br><code>sudo apt-get install xxx</code> 快速安装某个包<br><code>nano</code> ubuntu下的文本编辑器个人而言比vim好用<br>在执行linux服务器的时候我们可以使用SSH2通过putty或者CRT等远程链接工具进入SSH2。<br><a id="more"></a></p>
 <p>##NodeJs安装<br>刚开始我们需要安装基本的nodeJs编译环境我们可以通过下载官网的linux版本进行安装，这里我们不建议通过<code>sudo apt-get install</code>进行安装。下载Linux Binaries版本的NodeJs node-v4.4.4-linux-x64.tar.xz(版本并不是唯一)<br>解压:<br>tar -xJf node-v4.4.4-linux-x64.tar.xz<br>移到通用的软件安装目录 /opt/(此步骤可以不用操作):<br>sudo mv node-v4.4.4-linux-x64 /opt/</p>
@@ -217,7 +253,7 @@
     <link href="/2016/12/19/node-http/"/>
     <id>/2016/12/19/node-http/</id>
     <published>2016-12-19T09:18:09.000Z</published>
-    <updated>2016-12-19T09:25:42.367Z</updated>
+    <updated>2016-12-19T09:25:44.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="HTTP-协议"><a href="#HTTP-协议" class="headerlink" title="HTTP 协议"></a>HTTP 协议</h2><h3 id="HTTP简介"><a href="#HTTP简介" class="headerlink" title="HTTP简介"></a>HTTP简介</h3><p>超文本传输协议（HTTP，HyperText Transfer Protocol)是互联网上应用最为广泛的一种网络协议。所有的WWW文件都必须遵守这个标准。目前大部分应用开发都使用HTTP协议，如今无论是前端工程师，服务端工程师都要熟知HTTP协议。今天普遍使用的一个版本——HTTP 1.1。电商等大型科技公司使用的是——HTTPS。最新的HTTP版本于2015年发布为——HTTP2.0。</p>
 <h3 id="HTTP浅析"><a href="#HTTP浅析" class="headerlink" title="HTTP浅析"></a>HTTP浅析</h3><p>HTTP是一个客户端和服务器端请求和应答的标准。是客户端，服务器端应答机制。HTTP是客户端发起一个到服务器上指定端口（默认端口为80）的HTTP请求。服务端获得请求进行相关处理最后在返回给客户端。例如：我们在浏览器的地址栏里输入的网站地址叫做URL (Uniform Resource Locator，统一资源定位符)。就像每家每户都有一个门牌地址一样，每个网页也都有一个Internet地址。而每个网页中每个资源都有一个HTTP请求来动态展示HTML。<br><a id="more"></a></p>
@@ -263,7 +299,7 @@
     <link href="/2016/09/21/node-mvc-demo/"/>
     <id>/2016/09/21/node-mvc-demo/</id>
     <published>2016-09-21T06:06:02.000Z</published>
-    <updated>2016-09-21T07:42:53.964Z</updated>
+    <updated>2016-09-21T07:42:54.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="NodeJs-express框架-MVC结合Mysql数据库与前端Ajax登陆实例"><a href="#NodeJs-express框架-MVC结合Mysql数据库与前端Ajax登陆实例" class="headerlink" title="NodeJs(express框架) MVC结合Mysql数据库与前端Ajax登陆实例"></a>NodeJs(express框架) MVC结合Mysql数据库与前端Ajax登陆实例</h2><p>本实例我们使用NodeJs作为服务端链接Mysql数据库，前端使用Ajax操作.获取的数据格式为Json形式.该用例下载地址github:<a href="https://github.com/linkeyd/nodeMysql" target="_blank" rel="external">nodeMysql</a></p>
 <h3 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h3><p>创建一个Mysql <code>Test</code>数据库表<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="comment">-- ----------------------------</span></div><div class="line"><span class="comment">-- Table structure for `user`</span></div><div class="line"><span class="comment">-- ----------------------------</span></div><div class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> <span class="keyword">IF</span> <span class="keyword">EXISTS</span> <span class="string">`user`</span>;</div><div class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="string">`user`</span> (</div><div class="line">  <span class="string">`username`</span> <span class="built_in">varchar</span>(<span class="number">255</span>) <span class="keyword">DEFAULT</span> <span class="literal">NULL</span>,</div><div class="line">  <span class="string">`password`</span> <span class="built_in">varchar</span>(<span class="number">255</span>) <span class="keyword">DEFAULT</span> <span class="literal">NULL</span>,</div><div class="line">  <span class="string">`id`</span> <span class="built_in">int</span>(<span class="number">11</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> AUTO_INCREMENT,</div><div class="line">  PRIMARY <span class="keyword">KEY</span> (<span class="string">`id`</span>)</div><div class="line">) <span class="keyword">ENGINE</span>=<span class="keyword">InnoDB</span> AUTO_INCREMENT=<span class="number">2</span> <span class="keyword">DEFAULT</span> <span class="keyword">CHARSET</span>=utf8;</div><div class="line"></div><div class="line"><span class="comment">-- ----------------------------</span></div><div class="line"><span class="comment">-- Records of user</span></div><div class="line"><span class="comment">-- ----------------------------</span></div><div class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> <span class="string">`user`</span> <span class="keyword">VALUES</span> (<span class="string">'test'</span>, <span class="string">'lanling'</span>, <span class="string">'1'</span>);</div></pre></td></tr></table></figure></p>
@@ -312,7 +348,7 @@
     <link href="/2016/09/21/mvc-ajax/"/>
     <id>/2016/09/21/mvc-ajax/</id>
     <published>2016-09-21T05:46:09.000Z</published>
-    <updated>2016-09-21T07:43:01.816Z</updated>
+    <updated>2016-09-21T07:43:02.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="MVC浅析"><a href="#MVC浅析" class="headerlink" title="MVC浅析"></a>MVC浅析</h2><h3 id="MVC简介"><a href="#MVC简介" class="headerlink" title="MVC简介"></a>MVC简介</h3><p>MVC全名是Model View Controller，是模型(model)－视图(view)－控制器(controller)的缩写。是一种用一种业务逻辑、数据、界面显示分离的方法组织代码，将业务逻辑聚集到一个部件里面，在改进和个性化定制界面及用户交互的同时，不需要重新编写业务逻辑。MVC被独特的发展起来用于映射传统的输入、处理和输出功能在一个逻辑的图形化用户界面的结构中。MVC 分层有助于管理复杂的应用程序，可以结合AJAX前后端分离，让服务端成员在没有视图的基础上也可以进行用例测试。</p>
 <h3 id="MVC功能"><a href="#MVC功能" class="headerlink" title="MVC功能"></a>MVC功能</h3><ol>
@@ -356,7 +392,7 @@
     <link href="/2016/09/18/javascript-OOP/"/>
     <id>/2016/09/18/javascript-OOP/</id>
     <published>2016-09-18T07:43:10.000Z</published>
-    <updated>2016-09-18T10:19:29.113Z</updated>
+    <updated>2016-09-18T10:19:30.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="OOP浅析"><a href="#OOP浅析" class="headerlink" title="OOP浅析"></a>OOP浅析</h2><h3 id="面向对象编程"><a href="#面向对象编程" class="headerlink" title="面向对象编程"></a>面向对象编程</h3><p>面向对象编程(Object Oriented Programming,OOP),我们一般在学习C++和JAVA C#等语言中会经常使用，它 达到了软件工程的三个主要目标：重用性、灵活性和扩展性。它们最大的特点就是：封装 - 继承 - 多态。它比传统的面向过程语言区别于抽象性、封装性、重用性以及便于使用等方面的原因，在复杂的大型系统中能够简化代码使的面向对象编程方式越来越流行。现在也有越来越多的脚本语言采用了面向对象的编程思想让程序由繁化简。</p>
 <h3 id="面向对象编程的原则"><a href="#面向对象编程的原则" class="headerlink" title="面向对象编程的原则"></a>面向对象编程的原则</h3><ol>
@@ -409,7 +445,7 @@
     <link href="/2016/09/18/group-test/"/>
     <id>/2016/09/18/group-test/</id>
     <published>2016-09-18T06:06:14.000Z</published>
-    <updated>2016-09-18T09:13:26.000Z</updated>
+    <updated>2016-09-18T09:13:28.000Z</updated>
     
     <content type="html"><![CDATA[<div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 100%;"><img src="/html/group1.jpg" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/html/group2.jpg" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/html/group3.png" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/html/group4.jpg" alt=""></div></div></div></div>
 ]]></content>
@@ -428,7 +464,7 @@
     <link href="/2016/09/01/hello-world/"/>
     <id>/2016/09/01/hello-world/</id>
     <published>2016-09-01T06:06:02.000Z</published>
-    <updated>2017-01-26T06:51:30.170Z</updated>
+    <updated>2017-01-26T06:51:32.000Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/html/next.png" class="full-image"></p>
 <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
