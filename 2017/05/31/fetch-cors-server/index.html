@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Fetch,Cors," />
 
 
 
@@ -86,12 +86,19 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Ember">
-<meta property="og:url" content="/categories/mysql/nodeJs/mvc/index.html">
+<meta name="description" content="对于服务端Cors跨域它将会有以下的几个内容：
+Access-Control-Allow-Origin如果Origin指定的请求的地址，不在许可地址，服务器会返回一个正常的HTTP回应。浏览器发现，这个回应的头信息没有包含Access-Control-Allow-Origin字段，就知道出错了，从而抛出一个错误，被XMLHttpRequest的onerror回调函数捕获。我们可以设置* 来允许所有">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Fetch Cors跨域开发服务端登陆实例(二)">
+<meta property="og:url" content="/2017/05/31/fetch-cors-server/index.html">
 <meta property="og:site_name" content="Ember">
+<meta property="og:description" content="对于服务端Cors跨域它将会有以下的几个内容：
+Access-Control-Allow-Origin如果Origin指定的请求的地址，不在许可地址，服务器会返回一个正常的HTTP回应。浏览器发现，这个回应的头信息没有包含Access-Control-Allow-Origin字段，就知道出错了，从而抛出一个错误，被XMLHttpRequest的onerror回调函数捕获。我们可以设置* 来允许所有">
+<meta property="og:updated_time" content="2017-05-31T04:28:09.115Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ember">
+<meta name="twitter:title" content="Fetch Cors跨域开发服务端登陆实例(二)">
+<meta name="twitter:description" content="对于服务端Cors跨域它将会有以下的几个内容：
+Access-Control-Allow-Origin如果Origin指定的请求的地址，不在许可地址，服务器会返回一个正常的HTTP回应。浏览器发现，这个回应的头信息没有包含Access-Control-Allow-Origin字段，就知道出错了，从而抛出一个错误，被XMLHttpRequest的onerror回调函数捕获。我们可以设置* 来允许所有">
 
 
 
@@ -112,9 +119,9 @@
 
 
 
-  <link rel="canonical" href="/categories/mysql/nodeJs/mvc/"/>
+  <link rel="canonical" href="/2017/05/31/fetch-cors-server/"/>
 
-  <title> 分类: mvc | Ember </title>
+  <title> Fetch Cors跨域开发服务端登陆实例(二) | Ember </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -145,7 +152,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -246,54 +253,222 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        mvc
-        <small>分类</small>
-      </h2>
-    </div>
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Fetch Cors跨域开发服务端登陆实例(二)
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-05-31T12:26:34+08:00" content="2017-05-31">
+              2017-05-31
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Fetch/" itemprop="url" rel="index">
+                    <span itemprop="name">Fetch</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Fetch/Cors/" itemprop="url" rel="index">
+                    <span itemprop="name">Cors</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2017/05/31/fetch-cors-server/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/05/31/fetch-cors-server/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2017/05/31/fetch-cors-server/" class="leancloud_visitors" data-flag-title="Fetch Cors跨域开发服务端登陆实例(二)">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
       
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+      
+        <p>对于服务端Cors跨域它将会有以下的几个内容：</p>
+<h3 id="Access-Control-Allow-Origin"><a href="#Access-Control-Allow-Origin" class="headerlink" title="Access-Control-Allow-Origin"></a>Access-Control-Allow-Origin</h3><p>如果<code>Origin</code>指定的请求的地址，不在许可地址，服务器会返回一个正常的HTTP回应。浏览器发现，这个回应的头信息没有包含<code>Access-Control-Allow-Origin</code>字段，就知道出错了，从而抛出一个错误，被<code>XMLHttpRequest</code>的<code>onerror</code>回调函数捕获。我们可以设置<code>*</code> 来允许所有的跨域接口访问，也可以通过设置来只允许特定的接口访问,例如:<code>www.baidu.com</code>。注意，这种错误无法通过状态码识别，因为<code>HTTP Status</code>也可能为 200。<br><a id="more"></a></p>
+<h3 id="Access-Control-Allow-Headers"><a href="#Access-Control-Allow-Headers" class="headerlink" title="Access-Control-Allow-Headers"></a>Access-Control-Allow-Headers</h3><p>浏览器请求包括<code>Access-Control-Request-Headers</code>字段，那么服务器就需要提供<code>Access-Control-Allow-Headers</code>字段。它也是一个逗号分隔的字符串，表明服务器支持的所有头信息字段，不限于浏览器在”预检”中请求的字段，可以使用的默认参数为<code>X-Requested-With</code>。</p>
+<h3 id="Access-Control-Allow-Methods"><a href="#Access-Control-Allow-Methods" class="headerlink" title="Access-Control-Allow-Methods"></a>Access-Control-Allow-Methods</h3><p>该字段设置的参数为<code>PUT,POST,GET,DELETE,OPTIONS</code>等，设置服务端接受客户端哪些请求，在非简单请求的状态下用户会发送一个<code>OPTIONS</code>的预检查请求回收确认之后再发送一个正常的请求。</p>
+<h3 id="X-Powered-By"><a href="#X-Powered-By" class="headerlink" title="X-Powered-By"></a>X-Powered-By</h3><p>设置返回的服务器信息设置。默认可以为’ 3.2.1’；</p>
+<h3 id="Content-Type"><a href="#Content-Type" class="headerlink" title="Content-Type"></a>Content-Type</h3><p>设置服务器端接受的请求信息<code>application/json;charset=utf-8</code>接收前端发送过来的JSON字段请求。<br>非简单请求是那种对服务器有特殊要求的请求，比如请求方法是PUT或DELETE，或者Content-Type字段的类型是application/json。<br>接下来是设置服务端经过路由表的时候跨域的设置。</p>
+<h3 id="简单请求配置"><a href="#简单请求配置" class="headerlink" title="简单请求配置"></a>简单请求配置</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">app.all(<span class="string">'*'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">req, res, next</span>) </span>&#123;</div><div class="line">    res.header(<span class="string">"Access-Control-Allow-Origin"</span>, <span class="string">"*"</span>);</div><div class="line">    res.header(<span class="string">"Access-Control-Allow-Headers"</span>, <span class="string">"X-Requested-With"</span>);</div><div class="line">    res.header(<span class="string">"Access-Control-Allow-Methods"</span>,<span class="string">"PUT,POST,GET,DELETE,OPTIONS"</span>);</div><div class="line">    res.header(<span class="string">"X-Powered-By"</span>,<span class="string">' 3.2.1'</span>);</div><div class="line">    res.header(<span class="string">"Content-Type"</span>, <span class="string">"application/json;charset=utf-8"</span>);</div><div class="line">    next();</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h3 id="非简单请求配置"><a href="#非简单请求配置" class="headerlink" title="非简单请求配置"></a>非简单请求配置</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">app.all(<span class="string">'*'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">req, res, next</span>) </span>&#123;</div><div class="line">    res.header(<span class="string">"Access-Control-Allow-Origin"</span>, <span class="string">"*"</span>);</div><div class="line">    res.header(<span class="string">"Access-Control-Allow-Headers"</span>, <span class="string">"Content-Type"</span>);</div><div class="line">    res.header(<span class="string">"Access-Control-Allow-Methods"</span>,<span class="string">"PUT,POST,GET,DELETE,OPTIONS"</span>);</div><div class="line">    res.header(<span class="string">"X-Powered-By"</span>,<span class="string">' 3.2.1'</span>);</div><div class="line">    res.header(<span class="string">"Content-Type"</span>, <span class="string">"application/json;charset=utf-8"</span>);</div><div class="line">    next();</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>非简单请求的CORS请求，会在正式通信之前，增加一次HTTP查询请求，称为”预检”请求（preflight）。<br>浏览器先询问服务器，当前网页所在的域名是否在服务器的许可名单之中，以及可以使用哪些HTTP动词和头信息字段。只有得到肯定答复，浏览器才会发出正式的XMLHttpRequest请求，否则就报错。</p>
+<h3 id="Router登陆代码示例"><a href="#Router登陆代码示例" class="headerlink" title="Router登陆代码示例"></a>Router登陆代码示例</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line">router.post(<span class="string">'/login'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">req,res,next</span>)</span>&#123;</div><div class="line">co(<span class="function"><span class="keyword">function</span>*(<span class="params"></span>) </span>&#123;</div><div class="line">            <span class="keyword">try</span> &#123;</div><div class="line"></div><div class="line">                <span class="comment">//前端req给服务端账号密码</span></div><div class="line">                <span class="keyword">var</span> username = req.body.username;</div><div class="line">                <span class="keyword">var</span> password = crypto.createHash(<span class="string">'md5'</span>).update(req.body.password).digest(<span class="string">'base64'</span>);</div><div class="line">                <span class="comment">//mysql 查找id</span></div><div class="line">                <span class="keyword">var</span> loginResult = <span class="keyword">yield</span> exdUser.qAll(&#123;</div><div class="line">                    userId: username</div><div class="line">                &#125;);</div><div class="line">                <span class="comment">//账号不存在</span></div><div class="line">                <span class="keyword">if</span> (!loginResult.length) &#123;</div><div class="line">                    resStatusCode(res, <span class="number">1001</span>);</div><div class="line">                &#125;</div><div class="line">                <span class="comment">//密码不正确</span></div><div class="line">                <span class="keyword">else</span> (password != loginResult[<span class="number">0</span>].password) &#123;</div><div class="line">                    res.json(&#123;status:<span class="string">"密码错误"</span>&#125;);</div><div class="line">                &#125;</div><div class="line">                  </div><div class="line">                    res.json(loginResult);</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">catch</span> (err) &#123;</div><div class="line">                res.status(<span class="number">503</span>).end(<span class="string">'Bad Request'</span>);</div><div class="line">                <span class="built_in">console</span>.log(err);</div><div class="line">            &#125;</div><div class="line">        &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 
-      <h1 class="post-title">
+      
+    </div>
+
+    <div>
+      
         
-            <a class="post-title-link" href="/2016/09/21/node-mvc-demo/" itemprop="url">
-              
-                <span itemprop="name">nodeJs结合Mysql数据库与前端Ajax登陆实例</span>
-              
-            </a>
+<div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/img/weixin.jpg" alt="蘭凛 wechat" style="width: 200px; max-width: 100%;"/>
+    <div>扫一扫上面的微信公众号，订阅我的博客！</div>
+</div>
+
+
+      
+    </div>
+
+    <div>
+      
         
-      </h1>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-09-21T14:06:02+08:00"
-              content="2016-09-21" >
-          09-21
-        </time>
-      </div>
+      
+    </div>
 
-    </header>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Fetch/" rel="tag">#Fetch</a>
+          
+            <a href="/tags/Cors/" rel="tag">#Cors</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/05/26/fetch-cors-client/" rel="next" title="Fetch Cors跨域开发前端登陆实例(一)">
+                <i class="fa fa-chevron-left"></i> Fetch Cors跨域开发前端登陆实例(一)
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2017/05/31/fetch-cors-server/"
+     data-title="Fetch Cors跨域开发服务端登陆实例(二)"
+     data-content=""
+     data-url="/2017/05/31/fetch-cors-server/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
 
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
 
 
           </div>
           
 
+  <p>热评文章</p>
+  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/05/31/fetch-cors-server/"
+           data-title="Fetch Cors跨域开发服务端登陆实例(二)" data-url="/2017/05/31/fetch-cors-server/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -313,8 +488,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/img/avatar.jpg"
@@ -410,6 +594,17 @@
       </section>
 
       
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Access-Control-Allow-Origin"><span class="nav-number">1.</span> <span class="nav-text">Access-Control-Allow-Origin</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Access-Control-Allow-Headers"><span class="nav-number">2.</span> <span class="nav-text">Access-Control-Allow-Headers</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Access-Control-Allow-Methods"><span class="nav-number">3.</span> <span class="nav-text">Access-Control-Allow-Methods</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#X-Powered-By"><span class="nav-number">4.</span> <span class="nav-text">X-Powered-By</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Content-Type"><span class="nav-number">5.</span> <span class="nav-text">Content-Type</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#简单请求配置"><span class="nav-number">6.</span> <span class="nav-text">简单请求配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#非简单请求配置"><span class="nav-number">7.</span> <span class="nav-text">非简单请求配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Router登陆代码示例"><span class="nav-number">8.</span> <span class="nav-text">Router登陆代码示例</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
 
     </div>
   </aside>
@@ -502,6 +697,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 

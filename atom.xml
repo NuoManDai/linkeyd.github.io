@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2017-05-26T09:11:52.939Z</updated>
+  <updated>2017-05-31T04:28:09.115Z</updated>
   <id>/</id>
   
   <author>
@@ -16,11 +16,48 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Fetch Cors跨域开发前端登陆实例</title>
+    <title>Fetch Cors跨域开发服务端登陆实例(二)</title>
+    <link href="/2017/05/31/fetch-cors-server/"/>
+    <id>/2017/05/31/fetch-cors-server/</id>
+    <published>2017-05-31T04:26:34.000Z</published>
+    <updated>2017-05-31T04:28:09.115Z</updated>
+    
+    <content type="html"><![CDATA[<p>对于服务端Cors跨域它将会有以下的几个内容：</p>
+<h3 id="Access-Control-Allow-Origin"><a href="#Access-Control-Allow-Origin" class="headerlink" title="Access-Control-Allow-Origin"></a>Access-Control-Allow-Origin</h3><p>如果<code>Origin</code>指定的请求的地址，不在许可地址，服务器会返回一个正常的HTTP回应。浏览器发现，这个回应的头信息没有包含<code>Access-Control-Allow-Origin</code>字段，就知道出错了，从而抛出一个错误，被<code>XMLHttpRequest</code>的<code>onerror</code>回调函数捕获。我们可以设置<code>*</code> 来允许所有的跨域接口访问，也可以通过设置来只允许特定的接口访问,例如:<code>www.baidu.com</code>。注意，这种错误无法通过状态码识别，因为<code>HTTP Status</code>也可能为 200。<br><a id="more"></a></p>
+<h3 id="Access-Control-Allow-Headers"><a href="#Access-Control-Allow-Headers" class="headerlink" title="Access-Control-Allow-Headers"></a>Access-Control-Allow-Headers</h3><p>浏览器请求包括<code>Access-Control-Request-Headers</code>字段，那么服务器就需要提供<code>Access-Control-Allow-Headers</code>字段。它也是一个逗号分隔的字符串，表明服务器支持的所有头信息字段，不限于浏览器在”预检”中请求的字段，可以使用的默认参数为<code>X-Requested-With</code>。</p>
+<h3 id="Access-Control-Allow-Methods"><a href="#Access-Control-Allow-Methods" class="headerlink" title="Access-Control-Allow-Methods"></a>Access-Control-Allow-Methods</h3><p>该字段设置的参数为<code>PUT,POST,GET,DELETE,OPTIONS</code>等，设置服务端接受客户端哪些请求，在非简单请求的状态下用户会发送一个<code>OPTIONS</code>的预检查请求回收确认之后再发送一个正常的请求。</p>
+<h3 id="X-Powered-By"><a href="#X-Powered-By" class="headerlink" title="X-Powered-By"></a>X-Powered-By</h3><p>设置返回的服务器信息设置。默认可以为’ 3.2.1’；</p>
+<h3 id="Content-Type"><a href="#Content-Type" class="headerlink" title="Content-Type"></a>Content-Type</h3><p>设置服务器端接受的请求信息<code>application/json;charset=utf-8</code>接收前端发送过来的JSON字段请求。<br>非简单请求是那种对服务器有特殊要求的请求，比如请求方法是PUT或DELETE，或者Content-Type字段的类型是application/json。<br>接下来是设置服务端经过路由表的时候跨域的设置。</p>
+<h3 id="简单请求配置"><a href="#简单请求配置" class="headerlink" title="简单请求配置"></a>简单请求配置</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">app.all(<span class="string">'*'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">req, res, next</span>) </span>&#123;</div><div class="line">    res.header(<span class="string">"Access-Control-Allow-Origin"</span>, <span class="string">"*"</span>);</div><div class="line">    res.header(<span class="string">"Access-Control-Allow-Headers"</span>, <span class="string">"X-Requested-With"</span>);</div><div class="line">    res.header(<span class="string">"Access-Control-Allow-Methods"</span>,<span class="string">"PUT,POST,GET,DELETE,OPTIONS"</span>);</div><div class="line">    res.header(<span class="string">"X-Powered-By"</span>,<span class="string">' 3.2.1'</span>);</div><div class="line">    res.header(<span class="string">"Content-Type"</span>, <span class="string">"application/json;charset=utf-8"</span>);</div><div class="line">    next();</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h3 id="非简单请求配置"><a href="#非简单请求配置" class="headerlink" title="非简单请求配置"></a>非简单请求配置</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">app.all(<span class="string">'*'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">req, res, next</span>) </span>&#123;</div><div class="line">    res.header(<span class="string">"Access-Control-Allow-Origin"</span>, <span class="string">"*"</span>);</div><div class="line">    res.header(<span class="string">"Access-Control-Allow-Headers"</span>, <span class="string">"Content-Type"</span>);</div><div class="line">    res.header(<span class="string">"Access-Control-Allow-Methods"</span>,<span class="string">"PUT,POST,GET,DELETE,OPTIONS"</span>);</div><div class="line">    res.header(<span class="string">"X-Powered-By"</span>,<span class="string">' 3.2.1'</span>);</div><div class="line">    res.header(<span class="string">"Content-Type"</span>, <span class="string">"application/json;charset=utf-8"</span>);</div><div class="line">    next();</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>非简单请求的CORS请求，会在正式通信之前，增加一次HTTP查询请求，称为”预检”请求（preflight）。<br>浏览器先询问服务器，当前网页所在的域名是否在服务器的许可名单之中，以及可以使用哪些HTTP动词和头信息字段。只有得到肯定答复，浏览器才会发出正式的XMLHttpRequest请求，否则就报错。</p>
+<h3 id="Router登陆代码示例"><a href="#Router登陆代码示例" class="headerlink" title="Router登陆代码示例"></a>Router登陆代码示例</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line">router.post(<span class="string">'/login'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">req,res,next</span>)</span>&#123;</div><div class="line">co(<span class="function"><span class="keyword">function</span>*(<span class="params"></span>) </span>&#123;</div><div class="line">            <span class="keyword">try</span> &#123;</div><div class="line"></div><div class="line">                <span class="comment">//前端req给服务端账号密码</span></div><div class="line">                <span class="keyword">var</span> username = req.body.username;</div><div class="line">                <span class="keyword">var</span> password = crypto.createHash(<span class="string">'md5'</span>).update(req.body.password).digest(<span class="string">'base64'</span>);</div><div class="line">                <span class="comment">//mysql 查找id</span></div><div class="line">                <span class="keyword">var</span> loginResult = <span class="keyword">yield</span> exdUser.qAll(&#123;</div><div class="line">                    userId: username</div><div class="line">                &#125;);</div><div class="line">                <span class="comment">//账号不存在</span></div><div class="line">                <span class="keyword">if</span> (!loginResult.length) &#123;</div><div class="line">                    resStatusCode(res, <span class="number">1001</span>);</div><div class="line">                &#125;</div><div class="line">                <span class="comment">//密码不正确</span></div><div class="line">                <span class="keyword">else</span> (password != loginResult[<span class="number">0</span>].password) &#123;</div><div class="line">                    res.json(&#123;status:<span class="string">"密码错误"</span>&#125;);</div><div class="line">                &#125;</div><div class="line">                  </div><div class="line">                    res.json(loginResult);</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">catch</span> (err) &#123;</div><div class="line">                res.status(<span class="number">503</span>).end(<span class="string">'Bad Request'</span>);</div><div class="line">                <span class="built_in">console</span>.log(err);</div><div class="line">            &#125;</div><div class="line">        &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;对于服务端Cors跨域它将会有以下的几个内容：&lt;/p&gt;
+&lt;h3 id=&quot;Access-Control-Allow-Origin&quot;&gt;&lt;a href=&quot;#Access-Control-Allow-Origin&quot; class=&quot;headerlink&quot; title=&quot;Access-Control-Allow-Origin&quot;&gt;&lt;/a&gt;Access-Control-Allow-Origin&lt;/h3&gt;&lt;p&gt;如果&lt;code&gt;Origin&lt;/code&gt;指定的请求的地址，不在许可地址，服务器会返回一个正常的HTTP回应。浏览器发现，这个回应的头信息没有包含&lt;code&gt;Access-Control-Allow-Origin&lt;/code&gt;字段，就知道出错了，从而抛出一个错误，被&lt;code&gt;XMLHttpRequest&lt;/code&gt;的&lt;code&gt;onerror&lt;/code&gt;回调函数捕获。我们可以设置&lt;code&gt;*&lt;/code&gt; 来允许所有的跨域接口访问，也可以通过设置来只允许特定的接口访问,例如:&lt;code&gt;www.baidu.com&lt;/code&gt;。注意，这种错误无法通过状态码识别，因为&lt;code&gt;HTTP Status&lt;/code&gt;也可能为 200。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Fetch" scheme="/categories/Fetch/"/>
+    
+      <category term="Cors" scheme="/categories/Fetch/Cors/"/>
+    
+    
+      <category term="Fetch" scheme="/tags/Fetch/"/>
+    
+      <category term="Cors" scheme="/tags/Cors/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Fetch Cors跨域开发前端登陆实例(一)</title>
     <link href="/2017/05/26/fetch-cors-client/"/>
     <id>/2017/05/26/fetch-cors-client/</id>
     <published>2017-05-26T09:07:17.000Z</published>
-    <updated>2017-05-26T09:11:52.939Z</updated>
+    <updated>2017-05-31T03:54:21.571Z</updated>
     
     <content type="html"><![CDATA[<h3 id="Fetch"><a href="#Fetch" class="headerlink" title="Fetch"></a>Fetch</h3><p>Fetch API 是新一代的AJAX“Asynchronous JavaScript and XML”技术实现方案，它替代了长期以来一直被默认XMLHttpRequest作为了当前Web应用与服务端进行通信的基础的方案。Fetch API的优势在于可以明确的配置请求对象，以及利用Promise方法进行返回。</p>
 <p>npm安装依赖包:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install isomorphic-fetch --save</div></pre></td></tr></table></figure></p>
@@ -379,11 +416,11 @@
     
       <category term="nodeJs" scheme="/tags/nodeJs/"/>
     
+      <category term="mysql" scheme="/tags/mysql/"/>
+    
       <category term="mvc" scheme="/tags/mvc/"/>
     
       <category term="ajax" scheme="/tags/ajax/"/>
-    
-      <category term="mysql" scheme="/tags/mysql/"/>
     
   </entry>
   
