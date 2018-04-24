@@ -290,6 +290,37 @@
           </span>
 
           
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/react/" itemprop="url" rel="index">
+                    <span itemprop="name">react</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/react/redux/" itemprop="url" rel="index">
+                    <span itemprop="name">redux</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
 
           
             
@@ -329,7 +360,7 @@
 
       
         
-          <h3 id="Redux自述"><a href="#Redux自述" class="headerlink" title="Redux自述"></a>Redux自述</h3><p>  当我们在开发React component的时候我们会遇到一个非常棘手的问题，由于React是一种单向数据流的特性，通过props自上而下传递数据在通过state触发组件渲染。<br>  当我们的React项目越来越庞大涉及到组件之间的数据传递越来越复杂这时候我们就必须面对一个问题:怎么样才能够让数据在组件之间优雅的传递又能满足单向数据流的规则。<br>  这时候我们就可以使用redux，它是一个容器相当于在react的顶层建立了一个Provider的容器，自上而下的对容器进行分发。从而满足了单向数据流的规则，将应用的数据进行统一管理，并且使组件之间的数据传递变得更加的便捷。</p>
+          <h3 id="Redux自述"><a href="#Redux自述" class="headerlink" title="Redux自述"></a>Redux自述</h3><p>  当我们在开发React component的时候我们会遇到一个非常棘手的问题，由于React是一种<code>单向数据流</code>的特性，通过props自上而下传递数据在通过state触发组件渲染。<br>  当我们的React项目越来越庞大涉及到组件之间的数据传递越来越复杂这时候我们就必须面对一个问题:怎么样才能够让数据在组件之间优雅的传递又能满足单向数据流的规则。<br>  这时候我们就可以使用redux，它是一个容器相当于在react的顶层建立了一个<code>Provider</code>的容器，自上而下的对容器进行分发。从而满足了单向数据流的规则，将应用的数据进行统一管理，并且使组件之间的数据传递变得更加的便捷。</p>
 <h3 id="React-Redux模块安装"><a href="#React-Redux模块安装" class="headerlink" title="React-Redux模块安装"></a>React-Redux模块安装</h3><p>在React项目中使用redux我们将安装接下来这几个模块</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">npm install redux --save  <span class="comment">//redux本体</span></div><div class="line">npm install react-redux --save <span class="comment">//react使用的redux模块</span></div><div class="line">npm install react-router-redux --save <span class="comment">//保存react-router路由状态模块</span></div><div class="line">npm install redux-devtools-extension --save <span class="comment">//redux谷歌浏览器监听工具</span></div><div class="line">npm install redux-logger --save  <span class="comment">//redux 行为日志</span></div><div class="line">npm install redux-thunk --save  <span class="comment">//redux 异步数据保存</span></div></pre></td></tr></table></figure>
           <div class="post-more-link text-center">
@@ -836,7 +867,7 @@
           
             <div class="site-state-item site-state-categories">
               
-                <span class="site-state-item-count">19</span>
+                <span class="site-state-item-count">20</span>
                 <span class="site-state-item-name">分类</span>
               
             </div>
@@ -845,7 +876,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">16</span>
+                <span class="site-state-item-count">17</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
